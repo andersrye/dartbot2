@@ -1,0 +1,19 @@
+<html> <!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+<h1>Dartbot 2.0</h1>
+<h2>Current games:</h2>
+{{#current}}
+    <a href="/game/{{id}}">{{id}}</a>  {{date}} Players: {{playerorder}}<br/>
+{{/current}}
+<h2>Archived games:</h2>
+{{#archive}}
+    <a href="/game/{{id}}">{{id}}</a>  {{date}} Players: {{playerorder}}<br/>
+{{/archive}}
+
+</body>
+</html></html>

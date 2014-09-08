@@ -1,0 +1,25 @@
+<div class="world game">
+    <div class="game-id">
+        Game: {{id}}
+
+    </div>
+    <div class="players">
+        <div class="player">Plr</div>
+        <div class="score">Score</div>
+        {{#players}}
+            <div class="player">{{name}}</div>
+            <div class="score">{{score}}</div>
+        {{/players}}
+    </div>
+    <div class="scores">
+        {{#players}}
+            <div class="history">
+                {{#rounds}}
+                    <div class="throws">{{score}}</div>
+                {{/rounds}}
+            </div>
+            <div class="clear"></div>
+        {{/players}}
+
+    </div>
+</div>

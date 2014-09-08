@@ -1,0 +1,254 @@
+a {
+	color: #000;
+	text-decoration: none;
+	border-bottom: 1px dotted;
+}
+.world {
+	/*width: 660px;*/
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: 0;
+}
+
+.game {
+	margin-bottom: 20px;
+	background-color: #eee;
+	border: 2px solid #ccc;
+	width: 700px;
+	position: relative;
+	/*float:left;*/
+}
+.game-id {
+	background-color: #99b;
+	height: 27px;
+	padding-top: 3px;
+	/*vertical-align: middle;*/
+}
+.remaining {
+	text-align: center;
+	background-color: #ddd;
+	/*float: right;*/
+	display: inline-block;
+	font-size: 38pt;
+	width: 124px;
+	height: 90px;
+	padding:5px
+	/*text-align: center;*/
+}
+.remainingtitle {
+	font-size: 12pt;
+}
+.player {
+	display: inline-block;
+	background-color: #ddd;
+	width: 40px;
+	font-weight: bold;
+}
+
+.throws {
+	width: 50px;
+	display: inline-block;
+}
+.scores {
+    border: 1px solid #ccc;
+	display: inline-block;
+	vertical-align: top;
+	width: 464px;
+	/*height: 200px;*/
+	/*overflow: scroll;*/
+	overflow-y: hidden;
+	overflow-x: auto;
+	white-space: nowrap;
+}
+.history {
+	white-space: nowrap;
+}
+.score {
+	width: 90px;
+	display: inline-block;
+}
+.player, .throws, .score{
+	/*display: inline-block;*/
+	/*float: left;*/
+	border: 1px solid #ccc;
+	/*margin: -1px;*/
+	height: 30px;
+	text-align: center;
+	opacity: 0.7;
+    font-size: 12pt;
+}
+.filler {
+	float: left;
+	/*border: 2px solid #ccc;*/
+	margin: -1px;
+	height: 34px;
+	text-align: center;
+	opacity: 0.7;
+}
+.gameinfo {
+	vertical-align: top;
+	white-space: nowrap;
+}
+.cplayer {
+	text-align: center;
+	/*float: left;*/
+	display: inline-block;
+	vertical-align: top;
+	background-color: #ddd;
+	width: 125px;
+	height: 90px;
+	padding: 5px;
+	/*text-align: center;*/
+}
+.cplayerplayer {
+
+	font-size: 38pt;
+}
+.cthrows {
+	text-align: center;
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 4px;
+	margin-left: 4px;
+	padding: 5px;
+	height: 90px;
+	background-color: #ddd; 
+
+}
+.cthrow, .cthrow2 {
+	margin-right: 10px;
+	margin-left: 10px;
+	float: left;
+	font-size: 30pt;
+	width: 80px;
+	height: 55px;
+	text-align: center;
+	vertical-align: middle;
+	border: 2px solid #444;
+}
+.cthrow2 {
+	border: 2px dotted #888;
+
+}
+.players {
+	/*width: 656px;
+	white-space: nowrap;
+	overflow: auto;*/
+	width:134px;
+	display: inline-block;
+	vertical-align: top;
+
+}
+.current {
+	background-color: #bbc;
+	opacity: 1.0;
+	font-weight: bold;
+}
+.currentthrows {
+	background-color: #aac;
+	/*float: left;*/
+	display: inline-block;
+}
+
+.bust {
+	background-color: #e67;
+	background-color: #b44;
+}
+.win {
+	background-color: #4b4;
+	background-color: #595;
+}
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
+.clear {
+	clear: both;
+	height: 0px;
+	width: 100%;
+}
+.stat-pos, .stat-player, .stat-num {
+	display: inline-block;
+	border-bottom: 1px solid #ccc;
+}
+.stat-pos {
+	width: 18%;
+	padding-left: 2%;
+}
+.stat-player {
+	width:  30%;
+}
+.stat-num {
+	width: 48%;
+	text-align: right;
+	padding-right: 2%;
+}
+.stat-frame {
+	vertical-align: top;
+	width: 21%;
+	display: inline-block;
+	margin: 7px 2% 13px 2%;
+}
+.stats {
+	display: inline-block;
+	background-color: #eee;
+	border: 2px solid #ccc;
+	width: 600px;
+	vertical-align: top;
+}
+
+.board {
+	display: inline-block;
+	/*background-color: #eee;*/
+	background-image: url("dartboard.png");
+	background-color:rgba(255,0,0,0.5);
+    background-repeat: no-repeat;
+    background-position: right top;
+	border: 2px solid #ccc;
+	width: 600px;
+	height: 600px;
+	vertical-align: top;
+	opacity: 1;
+}
+.board img {
+	opacity: 1;
+    filter: alpha(opacity=70); /* For IE8 and earlier */
+}
+
+.hidden {
+	display: none;
+}
+.message {
+	display: none;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100px;
+	/*margin-left: 15%;	
+	margin-right: 15%;*/
+	margin-top: 30px;	
+	/*box-shadow: 5px 5px 10px #888888;*/
+	/*border-radius:8px;*/
+}
+.message-text {
+	position: absolute;
+	left: 0px;
+	top: 20%;
+	width: 100%;
+	text-align: center;
+	font-style: italic;
+}
+.good {
+	background-color: #595;
+	/*border: 3px dotted white;*/
+	font-size: 40pt;
+	color: #efe;
+}
+.bad {
+	background-color: #b44;
+	/*border: 3px dotted white;*/
+	font-size: 40pt;
+	color: #322;
+}
